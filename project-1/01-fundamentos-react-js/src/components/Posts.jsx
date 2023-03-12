@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { format, formatDistanceToNow } from "date-fns";
 import ptBr from "date-fns/locale/pt-BR";
 
 import { Comment } from "./Comment";
 import { Avatar } from "./Avatar";
+
 import styles from "./Posts.module.css";
-import { useState } from "react";
 
 export function Post({ author, publishedAt, content }) {
   const [comments, setComments] = useState(["Post muito bacana, hein?!"]);
@@ -31,6 +32,14 @@ export function Post({ author, publishedAt, content }) {
     setNewCommentText(event.target.value);
   }
 
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeleteOne = comments.filter((comment) => {
+      return comment !== commentToDelete;
+    });
+
+    setComments(commentsWithoutDeleteOne);
+  }
+
   return (
     <article className={styles.post}>
       <header>
@@ -49,6 +58,7 @@ export function Post({ author, publishedAt, content }) {
           {publishedDateRelativeToNow}
         </time>
       </header>
+
       <div className={styles.content}>
         {content.map((line) => {
           if (line.type === "paragraph") {
@@ -78,7 +88,13 @@ export function Post({ author, publishedAt, content }) {
 
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment key={comment} content={comment} />;
+          return (
+            <Comment
+              key={comment}
+              content={comment}
+              onDeleteComment={deleteComment}
+            />
+          );
         })}
       </div>
     </article>
