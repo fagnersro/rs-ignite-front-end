@@ -20,15 +20,6 @@
   margin-top: calc(0px - 1.5rem - 6px);
 }
 
-.avatar {
-  border-radius: 8px;
-  border: 1px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-
-  height: calc(3rem + 12px);
-  width: calc(3rem + 12px);
-}
-
 .profile strong {
   margin-top: 1rem;
   color: var(--gray-100);
