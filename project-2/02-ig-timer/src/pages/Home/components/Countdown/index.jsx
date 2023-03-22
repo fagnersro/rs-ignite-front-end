@@ -1,6 +1,6 @@
 import { CountdownContainer, Separator } from '.styles'
 import { differenceInSeconds } from 'date-fns'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export function Countdown() {
   const [amountSecondsPassed, setAmountSecondsPassed] = useState(0)
