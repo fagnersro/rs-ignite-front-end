@@ -1,3 +1,4 @@
+import { getCssText } from '@/styles'
 import {Roboto} from '@next/font/google'
 import type { AppProps } from 'next/app'
 
