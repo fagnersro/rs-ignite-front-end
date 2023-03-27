@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2023-03-26T18:24:48.910Z"
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "price": 15000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-27T00:56:51.627Z",
+      "id": 4
+    },
+    {
+      "description": "Pão de queijo",
+      "price": 7,
+      "category": "12",
+      "type": "outcome",
+      "createdAt": "2023-03-27T01:18:38.704Z",
+      "id": 5
     }
   ]
 }
