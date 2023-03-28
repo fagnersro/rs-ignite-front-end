@@ -17,16 +17,16 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return  (
     <Container>
-   <Header>
-    <Image src={logoImg} alt="" />
-   </Header>
-    <style jsx global>{
-        `
-          html {
-            font-family: ${roboto.style.fontFamily}
-          }
-        `
-      }</style>
+      <Header>
+        <Image src={logoImg} alt="" />
+      </Header>
+      <style jsx global>{
+          `
+            html {
+              font-family: ${roboto.style.fontFamily}
+            }
+          `
+        }</style>
       <Component {...pageProps} />
     </Container>
   ) 
