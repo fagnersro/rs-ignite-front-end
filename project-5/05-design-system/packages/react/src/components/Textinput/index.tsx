@@ -13,3 +13,5 @@ export function TextInput({ prefix, ...props }: TextInputProps) {
     </TextIputContainer>
   )
 }
+
+TextInput.displayName = 'TextInput'
