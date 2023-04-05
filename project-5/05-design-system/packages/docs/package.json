@@ -27,7 +27,7 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
-    "@storybook/addon-a11y": "^6.5.12",
+    "@storybook/addon-a11y": "^6.5.16",
     "@vitejs/plugin-react": "^3.1.0",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
